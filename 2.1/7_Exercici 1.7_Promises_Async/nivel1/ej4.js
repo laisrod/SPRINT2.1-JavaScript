@@ -19,7 +19,6 @@ async function executarPromessa() {
   const resultado = await minhaPromessa;
   console.log(resultado);
 }
-
 executarPromessa();
 
 
