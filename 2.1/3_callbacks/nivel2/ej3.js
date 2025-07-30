@@ -1,25 +1,9 @@
-function waitISaludar(name, callback) {
+function waitISaludar(nome, callback) {
   setTimeout(() => {
-    callback(name);
+      callback(nome);
   }, 2000);
 }
 
-//função anonima
-waitISaludar("Ana", function(name) {
-  console.log(`Hi, ${name}!`);
+waitISaludar("João", (nome) => {
+  console.log(`Olá, ${nome}!`);
 });
-
-// arrow function
-waitISaludar("Julia", nome => {
-  console.log(`Oi, ${nome}!`);
-});
-
-//console
-waitISaludar("Paula", console.log);
-
-//função ja definida
-function mostrarSaudacao(nome) {
-  alert("Saudação para: " + nome);
-}
-
-waitISaludar("Lucas", mostrarSaudacao);
